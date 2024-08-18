@@ -1,0 +1,97 @@
+@import "../../App.scss";
+
+
+.shop-category {
+    
+    margin-bottom: 50px;
+
+  .shopcategory-banner {
+    display: block;
+    margin: 30px auto;
+    width: 82%;
+    @include mobile{
+      margin: 30px auto;
+      width: 90vw;
+      height: 20vh;
+    }
+
+  }
+
+  .shopcategory-indexSort {
+    display: flex;
+    margin: 0px 170px;
+    justify-content: space-between;
+    align-items: center;
+    @include mobile{
+      margin: 0px 20px;
+    }
+
+    p {
+      @include mobile{
+        font-size: 12px;
+        margin: 0;
+      }
+
+      span {
+        font-weight: 600;
+        @include mobile{
+          font-size: 12px;
+        }
+      }
+    }
+
+    .shopcategory-sort {
+      padding: 10px 20px;
+      border-radius: 40px;
+      border: 1px solid #888;
+      
+      @include mobile{
+        padding: 5px 8px;
+        border-radius: 15px;
+        font-size: 12px;
+      }
+
+      img{
+        @include mobile{
+          width: 10px;
+        }
+      }
+
+    }
+  }
+
+  .shopcategory-products {
+    // margin: 20px 170px;
+    // // display: grid;
+    // // grid-template-columns: 1fr 1fr 1fr 1fr;
+    // // row-gap: 80px;
+    // display: flex;
+    // flex-wrap: wrap;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+
+    div {
+      width: 300px;
+      // overflow: hidden;
+      @include mobile{
+        width: 200px;
+      }
+
+      img {
+        width: 95%;
+        height: 95%;
+        object-fit: cover;
+      }
+    }
+
+    div:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
+  }
+}
