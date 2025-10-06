@@ -1,0 +1,236 @@
+@import "../../App.scss";
+
+
+.productdisplay{
+    width: 700px;
+    height: 800px;
+    display: flex;
+    margin: 0px 170px;
+    @include mobile{
+        margin: 0px;
+        width: 474px;
+        height: 500px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    @include tablet{
+        margin: 0px;
+        width: 768px;
+        height: 500px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .productdisplay-left{
+        display: flex;
+        gap: 17px;
+        
+
+        .productdisplay-img-list{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            @include mobile{
+                gap: 10px;
+            }
+            @include tablet{
+                gap: 15px;
+            }
+
+            img{
+                height: 140px;
+                @include mobile{
+                    height: 60px;
+                    width: 60px;
+                }
+                @include tablet{
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+        }
+
+        .productdisplay-main-img{
+            width: 550px;
+            height: 609px;
+            @include mobile{
+                height: 270px;
+                width: 270px;
+            }
+            @include tablet{
+                height: 365px;
+                width: 365px;
+            }
+        }
+    }
+
+    // -------------------------------------------------RIGHT---------------------------------------------
+
+    .productdisplay-right{
+        margin: 0px 70px;
+        display: flex;
+        flex-direction: column;
+        
+        
+
+        h1{
+            color: #3d3d3d;
+            font-size: 40px;
+            font-weight: 700;
+            @include mobile{
+                font-size: 20px;
+            }
+            @include tablet{
+                font-size: 23px;
+            }
+
+        }
+
+        .productdisplay-right-star{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            gap: 5px;
+            color: #1c1c1c;
+            font-size: 16px;
+            
+            img{
+                @include mobile{
+                    width: 15px;
+                }
+                @include tablet{
+                    width: 15px;
+                }
+            }
+
+        }
+
+        .productdisplay-right-prices{
+            display: flex;
+            align-items: center;
+            margin: 20px 0px;
+            gap: 30px;
+            font-size: 24px;
+            font-weight: 700;
+            @include mobile{
+                margin: 12px 0px;
+                gap: 15px;
+            }
+            @include tablet{
+                margin: 12px 0px;
+                gap: 15px;
+            }
+
+            .old-price{
+                color: #818181;
+                text-decoration: line-through;
+                font-size: 17px;
+                opacity: 0.7;
+            }
+
+            .new-price{
+                color: #ff4141;
+                font-size: 22px;
+            }
+            .high_light{
+                font-size: 13px;
+            }
+        }
+
+        .discription{
+            @include mobile{
+                font-size: 13px;
+            }
+            @include tablet{
+                font-size: 14px;
+            }
+        }
+
+        .product-size{
+            h1{
+                margin-top: 35px;
+                color: #656565;
+                font-size: 20px;
+                font-weight: 600;
+                @include mobile{
+                    margin-top: 20px;
+                    font-size: 15px;
+                }
+                @include tablet{
+                    margin-top: 20px;
+                    font-size: 15px;
+                }
+
+            }
+
+            .size{
+                display: flex;
+                margin: 25px 0px;
+                gap: 20px;
+                @include mobile{
+                    margin: 15px 0px;
+                    gap: 10px;
+                }
+                @include tablet{
+                    margin: 15px 0px;
+                    gap: 10px;
+                }
+
+                div{
+                    padding: 18px 24px; 
+                    background: #fbfbfb;
+                    border: 1px solid #ebebeb;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    @include mobile{
+                        padding: 10px 18px;
+                    }
+                    @include tablet{
+                        padding: 15px 20px;
+                    }
+
+                }
+            }
+        }
+        
+        button{
+            padding: 20px 40px;
+            width: 200px;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            background: #ff4141;
+            margin-bottom: 20px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            @include mobile{
+                padding: 10px 20px;
+                font-size: 14px;
+                margin: 0;
+            }
+            @include tablet{
+                padding: 15px 30px;
+                font-size: 14px;
+                margin: 0;
+            }
+        }
+
+        .productdisplay-right-category{
+            margin-top: 10px;
+            @include mobile{
+                font-size: 14px;
+            }
+            @include tablet{
+                font-size: 16px;
+            }
+
+            span{
+                font-weight: 600;
+                
+            }
+        }
+    }
+}

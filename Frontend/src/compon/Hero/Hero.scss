@@ -1,0 +1,156 @@
+@import "../../App.scss";
+
+.hero {
+  display: flex;
+  // background: linear-gradient(180deg, darkslategrey, rgb(100, 143, 143) 70%);
+  // width: 100wh;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  margin-bottom: 30px;
+  @include mobile {
+    // height: 350px;
+    // width: 450px;
+    width: 100vw;
+    height: 60vh;
+  }
+  @include tablet {
+    // height: 350px;
+    // width: 450px;
+    width: 100vw;
+    height: 60vh;
+  }
+
+  //   left------------------------------------------------------------
+  .hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+    @include mobile {
+      padding: 20px;
+      gap: 15px;
+      line-height: 1;
+    }
+    @include tablet {
+      padding: 30px;
+      gap: 20px;
+      line-height: 1;
+    }
+
+    h2 {
+      color: #090909;
+      font-size: 26px;
+      font-weight: 600;
+      @include mobile {
+        font-size: 23px;
+        font-weight: 700;
+      }
+    }
+
+    p {
+      color: #171717;
+      font-size: 100px;
+      font-weight: 700;
+      @include mobile {
+        font-size: 25px;
+        font-weight: 700;
+      }
+      @include tablet {
+        font-size: 40px;
+        font-weight: 700;
+      }
+    }
+
+    .hand-icons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      @include mobile {
+        gap: 10px;
+      }
+      @include tablet {
+        gap: 20px;
+      }
+
+      img {
+        width: 105px;
+        @include mobile {
+          width: 30px;
+        }
+        @include tablet {
+          width: 60px;
+        }
+      }
+    }
+
+    .hero-latest-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 310px;
+      height: 70px;
+      border-radius: 75px;
+      margin-top: 30px;
+      background: #ff1414;
+      color: white;
+      font-size: 22px;
+      font-weight: 500;
+      @include mobile {
+        gap: 0px;
+        width: 70px;
+        height: 23px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 300;
+        padding: 6px 10px;
+        margin-top: 20px;
+      }
+      @include tablet {
+        gap: 10px;
+        width: 150px;
+        height: 45px;
+        border-radius: 50px;
+        font-size: 15px;
+        font-weight: 300;
+        padding: 5px 15px;
+        margin-top: 20px;
+      }
+
+      img {
+        @include mobile {
+          width: 15px;
+        }
+        @include tablet {
+          width: 20px;
+        }
+      }
+    }
+  }
+
+  //   right----------------------------------------------------
+  .hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+      // width: 100vw;
+    }
+
+    img {
+      height: 630px;
+      @include mobile {
+        height: 280px;
+      }
+      @include tablet {
+        height: 380px;
+      }
+    }
+  }
+}

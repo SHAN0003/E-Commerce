@@ -1,0 +1,31 @@
+@import "../../App.scss";
+
+.breadcrum {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #5e5e5e;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 60px 170px;
+  text-transform: capitalize;
+  @include mobile {
+    margin: 30px 20px;
+    font-size: 10px;
+  }
+  @include tablet {
+    margin: 30px 20px;
+    font-size: 13px;
+  }
+
+  img {
+    @include mobile {
+      width: 7px;
+      height: 10px;
+    }
+    @include tablet {
+      width: 8px;
+      height: 12px;
+    }
+  }
+}

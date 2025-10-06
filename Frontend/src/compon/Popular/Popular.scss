@@ -1,0 +1,104 @@
+@import "../../App.scss";
+
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 90vh;
+  margin-bottom: 100px;
+  @include mobile{
+    width: 100vw;
+    height: 100vh;
+  }
+  @include tablet{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  
+  
+
+  h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 15px;
+    @include mobile{
+      margin-top: 50px;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 8px;
+    }
+    @include tablet{
+      margin-top: 300px;
+      font-size: 30px;
+      font-weight: 600;
+      letter-spacing: 10px;
+    }
+  }
+
+  hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+    @include mobile{
+      width: 150px;
+      height: 2px;
+    }
+    @include tablet{
+      width: 250px;
+      height: 3px;
+    }
+
+  }
+
+  .popular-item {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    // border-radius: 20px;
+    @include mobile{
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+    @include tablet{
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    
+    
+    div{
+      width: 300px;
+      // overflow: hidden;
+      @include mobile{
+        width: 200px;
+        height: 250px;
+        margin-bottom: 80px;
+      }
+      @include tablet{
+        width: 250px;
+        height: 300px;
+        margin-bottom: 80px;
+      }
+      
+
+      img{
+        width: 95%;
+        height: 95%;
+        object-fit: cover;
+      }
+    }
+
+    div:hover{
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+  }
+}

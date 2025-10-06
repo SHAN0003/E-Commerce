@@ -1,0 +1,267 @@
+@import "../../App.scss";
+
+.cartitems {
+  margin: 100px 170px;
+  @include mobile {
+    margin: 0;
+  }
+  @include tablet {
+    margin: 0;
+  }
+
+  hr {
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+    @include mobile {
+      height: 2px;
+    }
+    @include tablet {
+      height: 2px;
+    }
+  }
+
+  .cartitems-format-main {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+    @include mobile {
+      font-size: 15px;
+      gap: 0px;
+      display: flex;
+      justify-content: space-around;
+    }
+    @include tablet {
+      font-size: 15px;
+      gap: 0px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .cartitems-remove-icon {
+      width: 15px;
+      margin: 0px 40px;
+      cursor: pointer;
+      @include mobile {
+        width: 10px;
+      }
+      @include tablet {
+        width: 10px;
+      }
+    }
+  }
+
+  .cartitems-format {
+    font-size: 17px;
+    font-weight: 500;
+    @include mobile {
+      font-size: 12px;
+    }
+    @include tablet {
+      font-size: 13px;
+    }
+
+    :nth-child(2) {
+      @include mobile {
+        //this is for <p>tag below the title
+        width: 100px;
+      }
+      @include tablet {
+        //this is for <p>tag below the title
+        width: 150px;
+      }
+    }
+
+    .cartitems-product-icon {
+      height: 62px;
+    }
+    .cartitems-quantity {
+      width: 64px;
+      height: 50px;
+      border: 2px solid #ebebeb;
+      background: white;
+      @include mobile {
+        padding: 0;
+        width: 40px;
+        height: 35px;
+      }
+      @include tablet {
+        padding: 0;
+        width: 50px;
+        height: 40px;
+      }
+    }
+  }
+
+  .cartitems-down {
+    display: flex;
+    margin: 100px 0px;
+    @include mobile {
+      margin: 50px 20px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+    }
+    @include tablet {
+      margin: 50px 20px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    .cartitems-total {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      margin-right: 200px;
+      gap: 40px;
+      @include mobile {
+        gap: 10px;
+        margin: 0;
+      }
+      @include tablet {
+        gap: 15px;
+        margin: 0;
+      }
+
+      h1 {
+        @include mobile {
+          font-size: 25px;
+        }
+        @include tablet {
+          font-size: 30px;
+        }
+      }
+
+      .cartitems-total-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0px;
+        @include mobile {
+          width: 300px;
+          height: 25px;
+        }
+        @include tablet {
+          width: 400px;
+          height: 35px;
+        }
+      }
+
+      button {
+        width: 262px;
+        height: 58px;
+        outline: none;
+        border: none;
+        background: #ff5a5a;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        @include mobile {
+          font-size: 12px;
+          width: 300px;
+          height: 40px;
+        }
+        @include tablet {
+          font-size: 14px;
+          font-weight: 500;
+          width: 400px;
+          height: 50px;
+        }
+      }
+    }
+
+    .cartitems-promocode {
+      flex: 1;
+      font-size: 16px;
+      font-weight: 500;
+      @include mobile {
+        font-size: 12px;
+      }
+      @include tablet {
+        font-size: 15px;
+      }
+
+      p {
+        color: #555;
+        @include mobile {
+          font-size: 16px;
+          font-weight: 600;
+          text-align: center;
+        }
+        @include tablet {
+          font-size: 16px;
+          font-weight: 600;
+          text-align: center;
+        }
+      }
+
+      .cartitems-promobox {
+        width: 504px;
+        margin-top: 15px;
+        padding-left: 20px;
+        height: 58px;
+        background: #eaeaea;
+        @include mobile {
+          display: flex;
+          width: 300px;
+          height: 40px;
+          padding: 0;
+        }
+        @include tablet {
+          display: flex;
+          width: 400px;
+          height: 50px;
+          padding: 0;
+        }
+
+        input {
+          border: none;
+          outline: none;
+          background: transparent;
+          font-size: 16px;
+          width: 330px;
+          height: 50px;
+          @include mobile {
+            text-align: center;
+            letter-spacing: 2px;
+            height: 40px;
+            width: 300px;
+          }
+          @include tablet {
+            text-align: center;
+            letter-spacing: 2px;
+            width: 330px;
+            height: 50px;
+          }
+        }
+
+        button {
+          width: 170px;
+          height: 58px;
+          font-size: 16px;
+          background: black;
+          color: white;
+          cursor: pointer;
+          @include mobile {
+            height: 40px;
+            font-size: 13px;
+            letter-spacing: 2px;
+          }
+          @include tablet {
+            height: 50px;
+            font-size: 15px;
+            letter-spacing: 2px;
+          }
+        }
+      }
+    }
+  }
+}

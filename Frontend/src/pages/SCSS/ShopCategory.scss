@@ -1,0 +1,128 @@
+@import "../../App.scss";
+
+
+.shop-category {
+    
+    margin-bottom: 50px;
+
+  .shopcategory-banner {
+    display: block;
+    margin: 30px auto;
+    width: 82%;
+    @include mobile{
+      margin: 30px auto;
+      width: 90vw;
+      height: 20vh;
+    }
+    @include tablet{
+      margin: 30px auto;
+      width: 90vw;
+      height: 30vh;
+    }
+
+  }
+
+  .shopcategory-indexSort {
+    display: flex;
+    margin: 0px 170px;
+    justify-content: space-between;
+    align-items: center;
+    @include mobile{
+      margin: 0px 20px;
+    }
+    @include tablet{
+      margin: 0px 40px;
+    }
+
+    p {
+      @include mobile{
+        font-size: 12px;
+        margin: 0;
+      }
+      @include tablet{
+        font-size: 15px;
+        margin: 0;
+      }
+
+      span {
+        font-weight: 600;
+        @include mobile{
+          font-size: 12px;
+        }
+        @include tablet{
+          font-size: 15px;
+        }
+      }
+    }
+
+    .shopcategory-sort {
+      padding: 10px 20px;
+      border-radius: 40px;
+      border: 1px solid #888;
+      
+      @include mobile{
+        padding: 5px 8px;
+        border-radius: 15px;
+        font-size: 12px;
+      }
+      @include tablet{
+        padding: 9px 15px;
+        border-radius: 20px;
+        font-size: 14px;
+      }
+
+      img{
+        @include mobile{
+          width: 10px;
+        }
+        @include tablet{
+          width: 12px;
+        }
+      }
+
+    }
+  }
+
+  .shopcategory-products {
+    // margin: 20px 170px;
+    // // display: grid;
+    // // grid-template-columns: 1fr 1fr 1fr 1fr;
+    // // row-gap: 80px;
+    // display: flex;
+    // flex-wrap: wrap;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+    @include tablet{
+      gap: 0px;
+    }
+
+    div {
+      width: 300px;
+      // overflow: hidden;
+      @include mobile{
+        width: 200px;
+      }
+      @include tablet{
+        width: 250px;
+        height: 300px;
+        margin-bottom: 80px;
+      }
+
+      img {
+        width: 95%;
+        height: 95%;
+        object-fit: cover;
+      }
+    }
+
+    div:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
+  }
+}

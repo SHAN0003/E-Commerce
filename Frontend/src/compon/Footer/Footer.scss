@@ -1,0 +1,150 @@
+@import "../../App.scss";
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  @include mobile{
+    gap: 30px;
+  }
+  @include tablet{
+    gap: 40px;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include mobile{
+      gap: 10px;
+    }
+    @include tablet{
+      gap: 15px;
+    }
+    
+    img{
+      @include mobile{
+        width: 50px;
+        height: 50px;
+      }
+      @include tablet{
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    p {
+      color: #383838;
+      font-size: 46px;
+      font-weight: 700;
+      @include mobile{
+        font-size: 20px;
+      }
+      @include tablet{
+        font-size: 25px;
+      }
+
+    }
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #252525;
+    font-size: 20px;
+    @include mobile{
+      padding: 0;
+      gap: 25px;
+      font-size: 15px;
+    }
+    @include tablet{
+      padding: 0px;
+      gap: 40px;
+      font-size: 18px;
+    }
+
+    li {
+      cursor: pointer;
+    }
+
+    li:hover {
+      opacity: 0.7;
+      scale: 1.05;
+    }
+  }
+
+  .footer-social-icon {
+    display: flex;
+    gap: 20px;
+    @include mobile{
+      gap: 15px;
+    }
+    @include tablet{
+      gap: 18px;
+    }
+
+    .footer-icons-container {
+      padding: 10px;
+      padding-bottom: 6px;
+      background: #fbfbfb;
+      border: 1px solid #ebebeb;
+      opacity: 0.7;
+      
+      img{
+        @include mobile{
+          width: 20px;
+          height: 20px;
+        }
+        @include tablet{
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+    }
+
+    .footer-icons-container:hover {
+      opacity: 1;
+    }
+  }
+
+  .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-size: 20px;
+
+    hr {
+      width: 80%;
+      border: none;
+      border-radius: 10px;
+      height: 3px;
+      background: #c7c7c7;
+      @include mobile{
+        height: 1px;
+      }
+      @include tablet{
+        height: 2px;
+      }
+    }
+
+    p{
+      @include mobile{
+        font-size: 13px;
+        font-weight: 500;
+      }
+      @include tablet{
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+  }
+}

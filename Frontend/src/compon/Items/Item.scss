@@ -1,0 +1,62 @@
+@import "../../App.scss";
+
+
+
+.item{
+    width: 350px;
+    
+
+    p{
+        margin: 6px 0px;
+        @include mobile{
+            font-size: 12px;
+        }
+    }
+
+    .item-prices{
+        display: flex;
+        gap: 15px;
+        // position: relative;
+        @include mobile{
+            // justify-content: center;
+            // align-items: center;
+        }
+
+
+        .item-price-new{
+            flex: 1;
+            color: #374151;
+            font-size: 18px;
+            font-weight: 600;
+            @include mobile{
+                font-size: 16px;
+            }
+
+        }
+
+        .item-price-old{
+            color: #8c8c8c;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: line-through;
+            @include mobile{
+                font-size: 13px;
+            }
+
+        }
+        .no-line{
+            // position: absolute;
+            // z-index: 20;
+            // bottom: 380px;
+            // left: 15px;
+            margin-right: 200px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .item:hover{
+            transform: scale(1.05);
+            transition: 0.6s;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@import "../../App.scss";
+
+.descriptionbox {
+  margin: -50px 170px 100px 170px;
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 230px 0px 0px 0px;
+    align-items: center;
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    margin: 300px 0px 0px 0px;
+    align-items: center;
+  }
+
+  .description-navigator {
+    display: flex;
+
+    .discriptionbox-nav-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 600;
+      width: 171px;
+      height: 70px;
+      border: 1px solid #d0d0d0;
+      @include mobile {
+        font-size: 12px;
+        width: 120px;
+        height: 40px;
+      }
+      @include tablet {
+        font-size: 14px;
+        width: 150px;
+        height: 50px;
+      }
+    }
+
+    .discriptionbox-nav-box reviews {
+      background: #fbfbfb;
+      color: #555;
+    }
+  }
+
+  .descriptionbox-description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid #d0d0d0;
+    padding: 48px;
+    padding-bottom: 60px;
+    font-size: 18px;
+    @include mobile {
+      font-size: 12px;
+      padding: 10px;
+      width: 400px;
+    }
+    @include tablet {
+      font-size: 16px;
+      padding: 20px;
+      width: 650px;
+    }
+  }
+}
